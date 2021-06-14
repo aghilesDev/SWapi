@@ -10,7 +10,9 @@ export class StarshipsFacadeService {
 
   private isLoaded = false;
   constructor(private starshipsApi: StarshipsApiService, private starshipsState: StarshipsStateService) {
-    this.loadAllStarships().catch(e=>{});
+    this.loadAllStarships().catch(e=>{
+      // TODO: handle errors
+    });
   }
 
   getStarshps$(){

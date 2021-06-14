@@ -8,7 +8,9 @@ import { PeopleStateService } from './people-state.service';
 export class PeopleFacadeService {
 
   constructor(private peopleApi: PeopleApiService, private peopleState: PeopleStateService) {
-    this.loadAllPeople().catch(e=>{});
+    this.loadAllPeople().catch(e=>{
+      // TODO: handle errors
+    });
   }
 
   getPeople$(){
