@@ -1,0 +1,45 @@
+.base {
+  height: 54px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 50px;
+  box-shadow: 1px 2px 4px black;
+}
+.subcontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 2000px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+.margin-left {
+  margin-left: 10px;
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  font-size: 14px;
+  text-justify: center;
+}
+.flex-align-center {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+li.flex-align-center:hover {
+  background-color: #f5f5f5;
+  text-decoration: underline;
+}
+.starwars-font {
+  font-family: "STARWARS";
+}

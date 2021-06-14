@@ -1,0 +1,26 @@
+<div class="base-container">
+  <div class="main-container background-white card border-gray {
+    border: 1px solid #bbbbbb;
+  }">
+    <h1>{{(pilote$| async)?.name}}</h1>
+    <div class="container ">
+
+      <div class="card card-1 ">
+
+        <div><span class="label">Birthyear:</span> {{(pilote$| async)?.birth_year}}</div>
+        <div><span class="label">Height:</span> {{(pilote$| async)?.height}}</div>
+        <div><span class="label">Hair color:</span> {{(pilote$| async)?.hair_color}}</div>
+        <div><span class="label">Eye color:</span> {{(pilote$| async)?.eye_color}}</div>
+      </div>
+      <div class="card card-2 ">
+        <div><span class="label">Gender:</span> {{(pilote$| async)?.gender}}</div>
+        <div><span class="label">Mass:</span> {{(pilote$| async)?.mass}}</div>
+        <div><span class="label">Skin color:</span> {{(pilote$| async)?.skin_color}}</div>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+

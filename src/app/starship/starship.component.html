@@ -1,0 +1,34 @@
+<div class="base-container">
+  <div class="main-container">
+    <div class="container ">
+      <div class="card card-1 background-white border-gray">
+        <h1>{{(spaceship$ |async)?.name }}</h1>
+        <div><span class="label">Model:</span> {{(spaceship$ |async)?.model }}</div>
+        <div><span class="label">Manufacturer:</span> {{(spaceship$ |async)?.manufacturer }}</div>
+        <div><span class="label">Class:</span> {{(spaceship$ |async)?.starship_class }}</div>
+        <div><span class="label">hyperdrive:</span> {{(spaceship$ |async)?.hyperdrive_rating }}</div>
+        <div><span class="label">MGLT:</span> {{(spaceship$ |async)?.MGLT }}</div>
+        <div><span class="label">Max </span>atmosphering speed: {{(spaceship$ |async)?.max_atmosphering_speed }}</div>
+      </div>
+      <div class="card card-2 background-white border-gray">
+        <div><span class="label">Cost:</span> {{(spaceship$ |async)?.cost_in_credits }}</div>
+        <div><span class="label">Length:</span> {{(spaceship$ |async)?.length }}</div>
+        <div><span class="label">Crew:</span> {{(spaceship$ |async)?.crew }}</div>
+        <div><span class="label">Passengers:</span> {{(spaceship$ |async)?.passengers }}</div>
+        <div><span class="label">Cargo </span>Capacity: {{(spaceship$ |async)?.cargo_capacity }}</div>
+        <div><span class="label">Consumables:</span> {{(spaceship$ |async)?.consumables }}</div>
+      </div>
+
+    </div>
+
+    <div class="card card-3 background-white border-gray">
+      <span class="label" >Pilots:</span>
+      <div class="flex flex-wrap">
+        <div   *ngFor="let item of (pilots$ |async); let last = last">
+          <a [routerLink]="['/people/'+ item.id]"> {{item.name}}</a> <span *ngIf="!last">, &nbsp; </span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
