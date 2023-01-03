@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   min-width: 800px;
-  border-radius: 4px 4px 4px 4px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .container {
@@ -23,6 +23,11 @@
 }
 .border-gray {
   border: 1px solid #bbbbbb;
+}
+
+.box-shadow:hover {
+  box-shadow: 5px 10px 10px grey;
+  
 }
 
 .card {

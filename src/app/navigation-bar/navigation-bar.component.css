@@ -1,11 +1,11 @@
 .base {
-  height: 54px;
+  height: 74px;
 }
 .container {
   display: flex;
   justify-content: center;
   background-color: white;
-  height: 50px;
+  height: 70px;
   box-shadow: 1px 2px 4px black;
 }
 .subcontainer {

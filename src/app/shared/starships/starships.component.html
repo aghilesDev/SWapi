@@ -1,8 +1,16 @@
 
+<div class="title-div"> <h1>Spaceships</h1></div>
 <div class="container-fluid">
   <div class ="item-container">
-    <div class="item item-margin-top"  *ngFor="let item of spaceships$ | async as list" [routerLink]="['/starships/' + item.id]">
-      {{item.name}}
+    <div class="item item-margin-top ancestor"  *ngFor="let item of spaceships$ | async as list" [routerLink]="['/starships/' + item.id]">
+    <div >
+      <span class="text-name bold">{{item.name}}</span> <br>
+      <span class="bold">Class:</span> {{item.starship_class}} <br>
+      <span class="bold">Model:</span> {{item.model}}<br>
+    </div>
+    
+      <button class="bold" [routerLink]="['/starships/' + item.id]">Voir Plus </button>
+    
     </div>
   </div>
 </div>
